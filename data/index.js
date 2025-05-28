@@ -125,19 +125,20 @@ export const scaleData = [
 
 export const cardData = [
   {
-    title: "Total No Scales",
-    value: "9",
-    description: "No of scales registered",
-    icon: Scale,
-    bgColor: "bg-white "
-  },
-  {
     title: "Total Scale Reading",
     value: "1200kg",
     description: "Readings for the last 24 Hours",
     icon: Scale,
     bgColor: "bg-yellow-100 "
   },
+  {
+    title: "Total No Scales",
+    value: "9",
+    description: "No of scales registered",
+    icon: Scale,
+    bgColor: "bg-white "
+  },
+  
   {
     title: "Sites",
     value: "9",

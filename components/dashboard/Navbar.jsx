@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { Bell, Scale } from "lucide-react";
 import Link from "next/link";
 import { ModeToggle } from "../ModeToggle";
+import { SidebarTrigger } from "../ui/sidebar";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -30,10 +31,16 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-12 px-4 md:px-6 ">
-        <Link href="/" className="flex items-center gap-2 text-blue-400 font-semibold text-lg">
+        <div className="flex items-center gap-4">
+          
+            <SidebarTrigger />
+          
+          <Link href="/" className="flex items-center gap-2 text-blue-400 font-semibold text-lg">
           <Scale className="h-6 w-6" />
           <span className="text-blue-400">Weight Scale Monitor</span>
         </Link>
+        
+        </div>
         
         <div className="flex items-center gap-4">
           <ModeToggle/>

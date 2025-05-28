@@ -36,9 +36,9 @@ export function AppSidebar() {
                       <Link 
                         href={item.url}
                         className={cn(
-                          "flex items-center gap-2", 
+                          "flex items-center gap-2 ", 
                           isActive 
-                            ? "bg-blue-100 text-blue-500 dark:bg-blue-900 dark:text-blue-100" 
+                            ? "bg-blue-100 text-blue-500 dark:bg-blue-900  dark:text-blue-100" 
                             : "hover:bg-blue-100 dark:hover:bg-blue-900" 
                         )}
                       >

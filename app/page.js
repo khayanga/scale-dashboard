@@ -15,12 +15,12 @@ export default function Home() {
   };
   return (
     <main className=" px-4 flex min-h-screen w-full flex-col gap-4  ">
-      <section className=" md:py-12 px-4 relative overflow-hidden rounded-md">
+      <section className=" md:py-8 py-4 px-4 relative overflow-hidden rounded-md">
         <Decoration />
-        <h1 className="dark:text-gray-800 text-gray-700 md:text-2xl tracking-wide font-bold relative z-20">
+        <h1 className="dark:text-gray-800 text-white md:text-2xl tracking-wide font-bold relative z-20">
           Welcome Back User!
         </h1>
-        <p className="text-gray-700 mb-3 relative z-20">
+        <p className="dark:text-gray-700 text-white  mb-3 relative z-20">
           This is your starting point for managing and monitoring your Scale
           applications.
         </p>

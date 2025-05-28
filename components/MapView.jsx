@@ -112,17 +112,17 @@ const MapView = ({ scales, selectedScaleId, onScaleSelect }) => {
       // Create info window
       const infoWindow = new window.google.maps.InfoWindow({
         content: `
-    <div class=""  background-color: #1f2937; border-radius: 8px;">
-      <h3 style="font-weight: bold; margin-bottom: 4px;">${
+    <div style="background-color: #1f2937; border-radius: 8px; padding: 10px; color: white;">
+      <h3 style="font-weight: bold; margin-bottom: 4px; color: white;">${
         scale.location_name
       }</h3>
-      <p style="margin-bottom: 4px;">${scale.scale_id}</p>
+      <p style="margin-bottom: 4px; color: white;">${scale.scale_id}</p>
       <p style="margin-bottom: 4px; color: ${getStatusColor(
         scale.status
       )}; text-transform: capitalize;">
         ${scale.status}
       </p>
-      <p>${
+      <p style="color: white;">${
         scale.last_weight_reading > 0
           ? scale.last_weight_reading + " kg"
           : "No reading"
